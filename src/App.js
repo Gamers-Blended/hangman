@@ -30,7 +30,7 @@ function App() {
       const { key, keyCode} = event;
         if (playable && keyCode >= 65 && keyCode <= 90) { // letter keys on keyboard
           const letter = key.toLowerCase(); // get letter and make it lowercase
-    
+
           if (selectedWord.includes(letter)) {
             if (!correctLetters.includes(letter)) { // if selected word doesn't include letter
               setCorrectLetters(currentLetters => [...currentLetters, letter]); // create new array to add to letter
